@@ -8,9 +8,9 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/', ProductRouter);
-app.use('/', UserRouter);
-app.use('/', OrderRouter);
-app.use('/', LoginRouter);
+app.use('/products', ProductRouter);
+app.use('/users', UserRouter);
+app.use('/orders', OrderRouter);
+app.use('/login', LoginRouter);
 
 export default app;

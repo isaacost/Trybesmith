@@ -7,10 +7,10 @@ const router = Router();
 
 const controller = new ProductController();
 
-router.get('/products', controller.findAll);
+router.get('/', controller.findAll);
 
 router.use(ProductMiddleware.validateAmount);
 router.use(ProductMiddleware.validateName);
-router.post('/products', controller.create);
+router.post('/', controller.create);
 
 export default router;

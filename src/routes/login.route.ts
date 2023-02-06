@@ -9,6 +9,6 @@ const controller = new UserController();
 
 router.use(LoginMiddleware.validate);
 
-router.post('/login', controller.login);
+router.post('/', controller.login);
 
 export default router;

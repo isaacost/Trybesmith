@@ -1,4 +1,4 @@
-import IProduct from '../interfaces/product.interface';
+import { IProduct, IProductOrder } from '../interfaces/product.interface';
 import ProductModel from '../models/product.model';
 import connection from '../models/connection';
 
@@ -12,5 +12,10 @@ export default class ProductService {
   public create = async (product: IProduct) => {
     const created: IProduct = await this.model.create(product);
     return created;
+  };
+
+  public findAll = async () => {
+    const products: IProductOrder[] = await this.model.findAll();
+    return products;
   };
 }

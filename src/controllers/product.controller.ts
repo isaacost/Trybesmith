@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import IProduct from '../interfaces/product.interface';
+import { IProduct } from '../interfaces/product.interface';
 import ProductService from '../services/product.service';
 
 export default class ProductController {
@@ -15,5 +15,11 @@ export default class ProductController {
     const created = await this.service.create(product);
 
     return res.status(201).json(created);
+  };
+
+  public findAll = async (_req: Request, res: Response) => {
+    const products = await this.service.findAll();
+
+    return res.status(200).json(products);
   };
 }

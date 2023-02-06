@@ -8,6 +8,10 @@ export interface IUser {
   level: number,
   password: string,
 }
+
+export interface User extends IUser {
+  id: number,
+}
   
 export interface IToken {
   token: string,

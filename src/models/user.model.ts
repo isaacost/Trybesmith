@@ -1,5 +1,5 @@
 import { Pool, ResultSetHeader } from 'mysql2/promise';
-import { IUser, IToken } from '../interfaces/product.interface';
+import { IUser, IToken } from '../interfaces/user.interface';
 import { generateToken } from '../utils/JWT';
 
 export default class UserModel {

@@ -1,4 +1,4 @@
-import { IToken, IUser } from '../interfaces/product.interface';
+import { IToken, IUser } from '../interfaces/user.interface';
 import UserModel from '../models/user.model';
 import connection from '../models/connection';
 

@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { IUser } from '../interfaces/product.interface';
+import { IUser } from '../interfaces/user.interface';
 import UserService from '../services/user.service';
 
 export default class UserController {
